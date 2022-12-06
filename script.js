@@ -196,3 +196,35 @@ for (let i = 10; i < 34; i = i + 10) {
 
   console.log(str17);
 }
+
+/* 18. Используя цикл и метод push заполните массив числами от 1 до 10. */
+
+let arr18 = [];
+
+for (let i = 1; i < 11; i++) {
+  arr18.push(i);
+}
+
+console.log(arr18);
+
+/* 19. Используя цикл и метод push заполните массив 5-ю буквами 'x'.*/
+let arr19 = [];
+
+for (let i = 1; i < 6; i++) {
+  arr19.push("x");
+}
+
+console.log(arr19);
+
+/* 20. Дан массив с числами. Переберите его циклом и запишите в новый массив только положительные из чисел. */
+
+let arr20 = [1, -2, 3, -4, 5];
+let arr20New = [];
+
+for (let elem of arr20) {
+  if (elem > 0) {
+    arr20New.push(elem);
+  }
+}
+
+console.log(arr20New);
