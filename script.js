@@ -155,15 +155,44 @@ console.log(res14);
 которые делятся на 2, возведем в квадрат и выведем в консоль, а числа,
 которые делятся на 3, возведем в куб и выведем в консоль. */
 
-let arr15 = [4, 6, 8, 9, 15];
+let arr15 = [4, 6, 8, 9, 15, 7];
 
-for (let i = 0; i < arr15.length; i++) {
-  if (arr15[i] % 2 == 0) {
-    Math.pow(arr15[i], 2);
-  } else if (arr15[i] % 3 == 0) {
-    Math.pow(arr15[i], 3);
+for (let elem of arr15) {
+  if (elem % 2 == 0) {
+    elem = Math.pow(elem, 2);
+  } else if (elem % 3 == 0) {
+    elem = Math.pow(elem, 3);
+  } else {
+    continue;
+  }
+  console.log(elem);
+}
+
+/* 16. С помощью двух вложенных циклов выведите на экран следующую строку:
+111222333444555666777888999 */
+
+let str16 = "";
+
+for (let i = 1; i < 10; i++) {
+  for (let j = 1; j < 4; j++) {
+    str16 += i;
   }
 }
 
-//  
+console.log(str16);
 
+/* 17. С помощью двух вложенных циклов выведите на экран следующую строку:
+11 12 13 21 22 23 31 32 33 */
+
+let str17 = "";
+
+for (let i = 10; i < 34; i = i + 10) {
+  str17 = "";
+
+  for (let j = 1; j < 4; j++) {
+    let num17 = i + j;
+    console.log(num17);
+  }
+
+  console.log(str17);
+}
