@@ -281,21 +281,19 @@ let obj25 = { a: 1, b: 2, c: 3, d: 4, e: 5 };
 let obj25New = {};
 
 for (let key in obj25) {
-  obj25New[key] = key;
+  obj25New[obj25[key]] = key;
 }
 
 console.log(obj25);
 console.log(obj25New);
 
-// /* 26. let obj = {x: 1, y: 2, z: 3};
-// Переберите этот объект циклом и возведите каждый элемент этого объекта в квадрат. */
+/* 26. let obj = {x: 1, y: 2, z: 3};
+Переберите этот объект циклом и возведите каждый элемент этого объекта в квадрат. */
 
-// let obj26 = { x: 1, y: 2, z: 3 };
+let obj26 = { x: 1, y: 2, z: 3 };
 
-// for (let key in obj26) {
-//   obj26[key] = obj26[key] ** 2;
-// }
+for (let key in obj26) {
+  obj26[key] = obj26[key] ** 2;
+}
 
-// console.log(obj26);
-
-//
+console.log(obj26);
