@@ -297,3 +297,42 @@ for (let key in obj26) {
 }
 
 console.log(obj26);
+
+/* 27. let arr = ['a', 'b', 'c', 'd', 'e'];
+Проверьте, что в этом массиве есть элемент 'c'. Если есть - выведите '+++', а если нет - выведите '---'. */
+
+let arr27 = ["a", "b", "c", "d", "e"];
+let isHave27 = false;
+
+for (let elem of arr27) {
+  if (elem == "c") {
+    isHave27 = true;
+    break;
+  }
+}
+
+if (isHave27 == true) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+
+/* 28. Напишите код, который будет проверять число на то, простое оно или нет. 
+Простое число делится только на единицу и на само себя, и не делится на другие числа. */
+
+let flag28 = false;
+
+function isItSimple28(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i == 0) {
+      flag28 = false;
+      console.log(i);
+      break;
+    } else {
+      flag28 = true;
+    }
+  }
+  console.log(flag28);
+}
+
+isItSimple28(10);
