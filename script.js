@@ -336,3 +336,38 @@ function isItSimple28(number) {
 }
 
 isItSimple28(10);
+
+/* 29. Дан следующий массив:
+let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+Подсчитайте количество цифр 3 в этом массиве. */
+
+let arr29 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+let counter29 = 0;
+
+for (let elem of arr29) {
+  if (elem == 3) {
+    counter29++;
+  }
+}
+
+console.log(counter29);
+
+/* 30. Дан следующий массив:
+let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+Подсчитайте количество цифр 3 и цифр 2 в этом массиве. */
+
+let arr30 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// счетчик для двойки
+let counter30A = 0;
+// счетчик для тройки
+let counter30B = 0;
+
+for (let elem of arr30) {
+  if (elem == 2) {
+    counter30A++;
+  } else if (elem == 3) {
+    counter30B++;
+  }
+}
+
+console.log(counter30A, counter30B);
